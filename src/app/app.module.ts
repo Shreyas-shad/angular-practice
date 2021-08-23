@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClient } from '@angular/common/http';
+import { ShippingComponent } from './shipping/shipping.component';
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import { HttpClient } from '@angular/common/http';
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
-      { path: 'cart', component: CartComponent }
+      { path: 'cart', component: CartComponent },
+      { path: 'shipping', component: ShippingComponent }
     ])
   ],
   declarations: [
@@ -29,7 +31,8 @@ import { HttpClient } from '@angular/common/http';
     TopBarComponent,
     ProductListComponent,
     ProductAlertsComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    ShippingComponent
   ],
   bootstrap: [AppComponent]
 })
