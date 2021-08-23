@@ -10,7 +10,6 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { CommonModule } from '@angular/common';
 import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
-import { HttpClient } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
 
 @NgModule({
